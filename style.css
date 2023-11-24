@@ -17,7 +17,7 @@
   
     /* Font */
     --body-font: "Bai Jamjuree", sans-serif;
-    --biggest-font-size: 2.5rem;
+    --biggest-font-size: 3.5rem;
     --h1-font-size: 1.75rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
@@ -67,7 +67,7 @@
   
 
 .container {
-    margin-inline: 8rem;
+    margin-inline: 14rem;
   }
   
   .grid {
@@ -126,7 +126,7 @@
 .nav_list{
     display: flex;
     flex-direction: row;
-    column-gap: 2rem;
+    column-gap: 2.5rem;
 }
 .nav_link{
     color: var(--text-color);
@@ -139,8 +139,8 @@
 
 /* home page */
 .home_container{
-    grid-template-columns: repeat(2, 400px);
-    gap: 2rem 4rem;
+    grid-template-columns: repeat(2, 360px);
+    gap: 1rem 0rem;
     align-items: center;
     padding-block: 5.5rem;
     justify-content: space-evenly;
@@ -153,7 +153,28 @@
     place-content: center;
 }
 .home_image{
-    width: 350px;
+    width: 250px;
+}
+
+.home_social-media{
+    height: max-content;
+    width: fit-content;
+    display: flex;
+    column-gap: 1rem;
+}
+
+.home_social-link{
+    background-color: var(--black-color-light);
+    color: var(--white-color);
+    font-size: 1.25rem;
+    padding: 6px;
+    display: grid;
+    place-items: center;
+    transition: background-color .3s;
+}
+
+.home_social-link:hover{
+    background-color: var(--black-color);
 }
 
 .home_name{
@@ -162,8 +183,10 @@
     align-self: flex-end;
 }
 .home_info{
+    display: grid;
     margin-top: 0;
     align-self: flex-start;
+    row-gap: 1rem;
 }
 .home_name, .home_description{
     text-align: initial;
