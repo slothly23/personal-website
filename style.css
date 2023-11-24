@@ -196,3 +196,38 @@
     position: relative;
 }
 
+
+/* about page */
+.about{
+    background-color: var(--container-color);
+}
+
+.about_container{
+    margin-top: 3rem;
+    row-gap: 0;
+    max-width: auto;
+    align-items: center;
+}
+.about_description{
+    max-width: 1000px;
+}
+.about_name{
+    font-size: var(--biggest-font-size);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.about_info{
+    padding-left: 1.25rem;
+}
+.about_description{
+    position: relative;
+    color: var(--title-color);
+    margin-bottom: 1.5rem;
+}
+
+.about_list{
+    color: var(--title-color);
+    margin-bottom: 1rem;
+}
+
+
